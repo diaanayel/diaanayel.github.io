@@ -1,0 +1,19 @@
+*{
+  outline: none;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  min-height: 100%;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+header, footer{
+  text-align: center;
+  line-height: 100%;
+}
+
