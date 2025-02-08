@@ -1,0 +1,120 @@
+font-face {
+  font-family: "jetBrainsMono";
+  src: url("src/assets/font/jetBrainsMono.ttf");
+}
+
+:root {
+  --c-1: #101010;
+  --c-2: #f0f8ff;
+  --c-3: #1c1c1c;
+}
+
+[data-theme="dark"] {
+  --c-1: #ffffff;
+  --c-2: #101010;
+  --c-3: #f0f8ff;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  padding: 0;
+  margin: 0;
+
+  color: var(--c-1);
+  background-color: var(--c-2);
+  font-family: jetBrainsMono, monospace;
+}
+
+header {
+  font-size: 1.5em;
+  border-bottom: 0.1em dashed var(--c-1);
+}
+
+header, footer {
+  width: 100%;
+  padding: 0.5em;
+}
+
+button {
+  border-radius: 0.3em;
+  border: 0.1rem solid var(--c-1);
+  background-color: transparent;
+  padding: 1em 1.5em;
+}
+
+button:hover {
+  color: var(--c-2);
+  background-color: var(--c-1);
+}
+
+/* --------- */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-cv {
+  align-items: center;
+}
+
+.flex-ch {
+  justify-content: center;
+}
+
+.flex-spb {
+  justify-content: space-between;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+/* ------- */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2.5em;
+  height: 1.4em;
+}
+
+.switch input {
+  display: none;
+}
+
+
+.slider, .slider:before {
+  position: absolute;
+  border-radius: 0.1em;
+  transition: 0.3s;
+}
+
+.slider {
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 0.1rem solid var(--c-1);
+  background-color: transparent;
+}
+
+.slider:before {
+  content: "";
+  height: 1.1em;
+  width: 1.1em;
+  top: 0.1em;
+  left: 0.1em;
+  background-color: var(--c-1);
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.07em);
+}
+
+/* ------- */

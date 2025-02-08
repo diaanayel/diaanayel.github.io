@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark">
+  <title>Diaa Nayel</title>
+
+  <link rel="stylesheet" href="src/css/app.css">
+  <script>
+    (function() {
+      document.documentElement.setAttribute('data-theme', localStorage.getItem("theme") || "light");
+    })();
+  </script>
+</head>
+<body class="flex flex-col flex-cv flex-ch">
+  <header class="flex flex-cv flex-spb">
+    <div>Diaa Nayel</div>
+
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
+      <span class="slider"></span>
+    </label>
+  </header>
+
+  <script src="src/js/app.js"></script>
+</body>
+</html>
